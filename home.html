@@ -13,25 +13,57 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&family=Quicksand:wght@300&display=swap" rel="stylesheet">
 
+         <!--FAVICON  do we want the favicon to be H-logo or Delta Nu logo? -->
+        <link
+        rel="shortcut icon"
+        type="img/png"
+        href="images/favicon.png" />
+
         <!-- Responsiveness -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--Sticky sidebar-->
+        <script src="//code.jquery.com/jquery.min.js"></script>
+        <script src="dist/ResizeSensor.js"></script>
+        <script src="dist/theia-sticky-sidebar.js"></script>
     </head>
 
     <body>
         <header>
-            <!-- Harvard Logo goes here -->
-            <nav>
-                <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="memories.html">Memories</a></li>
-                    <li><a href="rsvp.html">R.S.V.P.</a></li>
+          
+            <nav class="navbar">
+                <ul class="nav-list">
+                    <li class="list-item">
+                        <!-- Harvard Logo goes here -->
+                        <a href="#home">
+                            <img class="logo" src="images/logo.png" alt="logo" title="logo"
+                        /></a></li>
+                    <li class="list-item"><a href="home.html">Home</a></li>
+                    <li class="list-item"><a href="memories.html">Memories</a></li>
+                    <li class="list-item"><a href="rsvp.html">R.S.V.P.</a></li>
                 </ul>
             </nav>
         </header>
 
         <main>
             <!-- image of invite here -->
+            <img src="images/invitation.jpg" class="invite" alt="Harvard Class of 2004 Reunion Invite"/>
+
+            <!-- Stick sidebar here-->
+            <div class="main-content">
+                <div class="sidebar">
+                    <div class="sidebar__inner">
+                       <h2>ABOUT</h2> 
+                    </div>
+                </div>
+                <div class="content">
+                    <p>I’m Elle Woods, your favorite gemini vegetarian, and I have taken it upon myself to coordinate our class reunion this year! We have several super fun events planned, so head on over to our RSVP page to confirm your attendance. I am so excited to see all of you and celebrate all of our accomplishments. Snaps for us, WE DID IT!
+                    </p>
+                  
+                </div>
+            </div>
             
+       
 
         </main>
 
@@ -39,5 +71,9 @@
             <p>Sponsored by Delta Nu and Elle Woods</p>
             <!-- Delta Nu logo here -->
         </footer>
+
+        <script src="js/main.js"></script>
+       
+        
     </body>
 </html>

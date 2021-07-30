@@ -4,6 +4,73 @@
     border: none;
 }
 
+
+p{
+    font-family: 'Quicksand', sans-seriff;
+    color: #ea0083 ;
+    font-size: 24px;
+}
 /** Google fonts: font-family: 'Petit Formal Script', cursive;
 font-family: 'Quicksand', sans-serif; */
 
+
+
+/** Nav Bar */
+.logo{
+    max-width: 35%;
+}
+
+.navbar{
+    background-color: #ffc2e3;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    font-size: 28px;
+}
+
+.nav-list{
+    list-style-type: none;
+}
+
+.nav-list .list-item {
+    display: inline-block;
+    padding: 20px 10px;
+}
+
+/** Home Page */
+body{
+    background-image: url("images/background.jpg");
+}
+
+.invite{
+    width: 45%;
+}
+
+p{
+    color: #ea0083;
+
+}
+
+footer{
+    background-color: #ffc2e3;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+}
+
+footer p{
+    font-family: 'Petit Formal Script', cursive;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+/* Sticky sidebar */
+.sidebar{
+    will-change: min-height;
+}
+
+.sidebar__inner{
+    transform: translate(0, 0); /* For browsers don't support translate3d. */
+    transform: translate3d(0, 0, 0);
+    will-change: position, transform;
+}
