@@ -15,7 +15,7 @@ h3 {
 
 p, label, input, li{
     font-family: 'Quicksand', sans-seriff;
-    font-size: 1em;
+    font-size: 1.2em;
 }
 /** Google fonts: font-family: 'Petit Formal Script', cursive;
 font-family: 'Quicksand', sans-serif; */
@@ -112,10 +112,52 @@ footer p{
     text-align: center;
     margin: 5%;
     padding: 3%;
+    display: flex;
+    flex-direction: column;
+}
+
+.rsvp_section button {
+    font-family: 'Petit Formal Script', cursive;
+    font-size: 1.3em;
+    background: #53c9ed;
+    border: solid white 2px;
+    border-radius: 10px;
+    margin: 5%;
+    padding: 2% 5%;
+}
+
+.rsvp_section button:hover {
+    background: #53c9ed;
+    border: solid white 2px;
+    border-radius: 10px;
+    margin: 5%;
+    padding: 2% 5%;
 }
 
 .fashion_tips ol{
-    padding: 0 3%;
+    padding: 3% 3%;
+}
+
+.fashion_tips li {
+    padding: 3% 0;
 }
 
 
+/********************* Media Queries *********************/
+
+/* RSVP Page */
+@media (min-width: 600px) {
+    main {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .rsvp_container {
+        width: 75%;
+    }
+
+    .fashion_tips {
+        margin: 0;
+        width: 30%;
+    }
+}
