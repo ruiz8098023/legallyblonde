@@ -4,9 +4,13 @@
     border: none;
 }
 
-h1, h2, h3 {
+h1, h2 {
     font-family: 'Petit Formal Script', cursive;
     color: #ea0083
+}
+
+h3 {
+    font-family: 'Quicksand', sans-seriff;
 }
 
 p, label, input, li{
@@ -19,6 +23,11 @@ font-family: 'Quicksand', sans-serif; */
 
 
 /** Nav Bar */
+
+header {
+    text-align: center;
+}
+
 .logo{
     max-width: 35%;
 }
@@ -29,6 +38,7 @@ font-family: 'Quicksand', sans-serif; */
     justify-content: space-around;
     align-items: baseline;
     font-size: 28px;
+    width: 100%;
 }
 
 .nav-list{
@@ -49,16 +59,15 @@ body{
     width: 45%;
 }
 
-p{
+/* p{
     color: #ea0083;
 
-}
+} */
 
 footer{
     background-color: #ffc2e3;
     text-align: center;
-    width: 100%;
-    padding: 20px;
+    padding: 3%;
 }
 
 footer p{
@@ -83,16 +92,30 @@ footer p{
 
 
 /********************* RSVP Page Styling *********************/
-.reunion, .rsvp_section, .fashion_tips {
-    margin: 3%;
-    padding: 2%;
-}
-
 .reunion, .fashion_tips {
     background-color: white;
+    border: solid #53c9ed 5px;
+    margin: 5%;
+    padding: 5%;
+}
+
+.reunion p {
+    padding: 5px 0;
+}
+
+.reunion h3 {
+    color: #ea0083;
 }
 
 .rsvp_section {
     background-color: #ffc2e3;
     text-align: center;
+    margin: 5%;
+    padding: 3%;
 }
+
+.fashion_tips ol{
+    padding: 0 3%;
+}
+
+
