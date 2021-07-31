@@ -3,3 +3,18 @@
     padding: 0;
     border: none;
 }
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+div {
+    padding: 3%;
+    width: 55%;
+}
+
+aside {
+    padding: 3%;
+    width: 30%;
+}
