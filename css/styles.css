@@ -1,62 +1,68 @@
 * {
-    margin: 0;
-    padding: 0;
-    border: none;
+  margin: 0;
+  padding: 0;
+  border: none;
 }
 
-h1, h2 {
-    font-family: 'Petit Formal Script', cursive;
-    color: #ea0083
+h1,
+h2 {
+  font-family: "Petit Formal Script", cursive;
+  color: #ea0083;
 }
 
 h3 {
-    font-family: 'Quicksand', sans-seriff;
+  font-family: "Quicksand", sans-seriff;
 }
 
-p, label, input, li{
-    font-family: 'Quicksand', sans-seriff;
-    font-size: 1.2em;
+p,
+label,
+input,
+li {
+  font-family: "Quicksand", sans-seriff;
+  font-size: 1.2em;
 }
 /** Google fonts: font-family: 'Petit Formal Script', cursive;
 font-family: 'Quicksand', sans-serif; */
 
-
-
 /** Nav Bar */
 
 header {
-    text-align: center;
+  text-align: center;
 }
 
-.logo{
-    max-width: 35%;
+.logo {
+  max-width: 35%;
 }
 
-.navbar{
-    background-color: #ffc2e3;
-    display: flex;
-    justify-content: space-around;
-    align-items: baseline;
-    font-size: 28px;
-    width: 100%;
+.navbar {
+  background-color: #ffc2e3;
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  font-size: 28px;
+  width: 100%;
 }
 
-.nav-list{
-    list-style-type: none;
+.nav-list {
+  list-style-type: none;
 }
 
 .nav-list .list-item {
-    display: inline-block;
-    padding: 20px 10px;
+  display: inline-block;
+  padding: 20px 10px;
 }
 
 /** Home Page */
-body{
-    background-image: url("../images/background.jpg");
+body {
+  background-image: url("../images/background.jpg");
 }
 
-.invite{
-    width: 45%;
+.invite {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+  padding: 2%;
 }
 
 /* p{
@@ -64,100 +70,120 @@ body{
 
 } */
 
-footer{
-    background-color: #ffc2e3;
-    text-align: center;
-    padding: 3%;
+footer {
+  background-color: #ffc2e3;
+  text-align: center;
+  padding: 3%;
+  margin: auto;
 }
 
-footer p{
-    font-family: 'Petit Formal Script', cursive;
-    font-size: 1.2em;
-    font-weight: 400;
+footer p {
+  font-family: "Petit Formal Script", cursive;
+  font-size: 1.2em;
+  font-weight: 400;
 }
 
-/* Sticky sidebar */
+.ellehomepage {
+  display: block;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2%;
+  background-color: #ea0083;
+}
+
+
+.about {
+  background-color: #ffffff;
+  opacity: 0.9;
+  padding: 9%;
+  margin: auto;
+  border: solid #53c9ed 5px;
+  text-align: center;
+}
+
+.about h2{
+    padding-top: 2%;
+}
+
+/* Sticky sidebar 
 .sidebar{
     will-change: min-height;
 }
 
 .sidebar__inner{
-    transform: translate(0, 0); /* For browsers don't support translate3d. */
+    transform: translate(0, 0); /* For browsers don't support translate3d. 
     transform: translate3d(0, 0, 0);
     will-change: position, transform;
-}
-
-
-
-
+} */
 
 /********************* RSVP Page Styling *********************/
-.reunion, .fashion_tips {
-    background-color: white;
-    border: solid #53c9ed 5px;
-    margin: 5%;
-    padding: 5%;
+.reunion,
+.fashion_tips {
+  background-color: white;
+  border: solid #53c9ed 5px;
+  margin: 5%;
+  padding: 5%;
 }
 
 .reunion p {
-    padding: 5px 0;
+  padding: 5px 0;
 }
 
 .reunion h3 {
-    color: #ea0083;
+  color: #ea0083;
 }
 
 .rsvp_section {
-    background-color: #ffc2e3;
-    text-align: center;
-    margin: 5%;
-    padding: 3%;
-    display: flex;
-    flex-direction: column;
+  background-color: #ffc2e3;
+  text-align: center;
+  margin: 5%;
+  padding: 3%;
+  display: flex;
+  flex-direction: column;
 }
 
 .rsvp_section button {
-    font-family: 'Petit Formal Script', cursive;
-    font-size: 1.3em;
-    background: #53c9ed;
-    border: solid white 2px;
-    border-radius: 10px;
-    margin: 5%;
-    padding: 2% 5%;
+  font-family: "Petit Formal Script", cursive;
+  font-size: 1.3em;
+  background: #53c9ed;
+  border: solid white 2px;
+  border-radius: 10px;
+  margin: 5%;
+  padding: 2% 5%;
 }
 
 .rsvp_section button:hover {
-    background: #53c9ed;
-    border: solid white 2px;
-    border-radius: 10px;
-    margin: 5%;
-    padding: 2% 5%;
+  background: #53c9ed;
+  border: solid white 2px;
+  border-radius: 10px;
+  margin: 5%;
+  padding: 2% 5%;
 }
 
-.fashion_tips ol{
-    padding: 3% 3%;
+.fashion_tips ol {
+  padding: 3% 3%;
 }
 
 .fashion_tips li {
-    padding: 3% 0;
+  padding: 3% 0;
 }
-
 
 /********************* Media Queries *********************/
 
 /* RSVP Page */
 @media (min-width: 600px) {
-    main {
-        display: flex;
-        flex-direction: row;
-    }
+  main {
+    display: flex;
+    flex-direction: row;
+  }
 
-    .rsvp_container {
-        width: 75%;
-    }
+  .rsvp_container {
+    width: 75%;
+  }
 
-    .fashion_tips {
-        margin: 0;
-        width: 30%;
-    }
+  .fashion_tips {
+    margin: 0;
+    width: 30%;
+  }
 }
