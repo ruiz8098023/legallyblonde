@@ -22,51 +22,38 @@ font-family: 'Quicksand', sans-serif; */
 
 
 
-/** Nav Bar */
+/** Nav Bar and Header **/
 
 header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: baseline;
     text-align: center;
+    background-color: #ffc2e3;
 }
 
 .logo{
+    width: 100%;
     max-width: 35%;
 }
 
-/* .navbar{
-    background-color: #ffc2e3;
-    display: flex;
-    justify-content: space-around;
-    align-items: baseline;
-    font-size: 28px;
-    width: 100%;
-} */
-
 nav {
-    background-color: #ffc2e3;
-    display: flex;
-    justify-content: space-around;
-    align-items: baseline;
-    font-size: 28px;
+    font-family: 'Quicksand', sans-seriff;
+    font-size: 1.5em;
     width: 100%;
 }
-
-/* .nav-list{
-    list-style-type: none;
-} */
 
 nav ul {
     list-style-type: none;
 }
 
-/* .nav-list .list-item {
-    display: inline-block;
-    padding: 20px 10px;
-} */
-
 nav ul li {
     display: inline-block;
     padding: 20px 10px;
 }
+
+
 
 /** Home Page */
 body{
@@ -145,7 +132,7 @@ footer p{
 }
 
 .rsvp_section button:hover {
-    background: #53c9ed;
+    background: white;
     border: solid white 2px;
     border-radius: 10px;
     margin: 5%;
@@ -165,6 +152,27 @@ footer p{
 
 /* RSVP Page */
 @media (min-width: 600px) {
+
+    /* Header and Nav Media Query */
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .logo {
+        width: 35%;
+    }
+
+    nav {
+        padding: 2%;
+        font-size: 1.5em;
+        width: 60%;
+    }
+
+
+
     main {
         display: flex;
         flex-direction: row;
