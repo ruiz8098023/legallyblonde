@@ -32,7 +32,16 @@ header {
     max-width: 35%;
 }
 
-.navbar{
+/* .navbar{
+    background-color: #ffc2e3;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    font-size: 28px;
+    width: 100%;
+} */
+
+nav {
     background-color: #ffc2e3;
     display: flex;
     justify-content: space-around;
@@ -41,11 +50,20 @@ header {
     width: 100%;
 }
 
-.nav-list{
+/* .nav-list{
+    list-style-type: none;
+} */
+
+nav ul {
     list-style-type: none;
 }
 
-.nav-list .list-item {
+/* .nav-list .list-item {
+    display: inline-block;
+    padding: 20px 10px;
+} */
+
+nav ul li {
     display: inline-block;
     padding: 20px 10px;
 }
