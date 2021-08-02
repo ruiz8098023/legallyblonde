@@ -11,48 +11,149 @@ h2 {
 }
 
 h3 {
-  font-family: "Quicksand", sans-seriff;
+  font-family: "Quicksand", sans-serif;
 }
 
 p,
 label,
 input,
 li {
-  font-family: "Quicksand", sans-seriff;
+  font-family: "Quicksand", sans-serif;
   font-size: 1.2em;
 }
 /** Google fonts: font-family: 'Petit Formal Script', cursive;
 font-family: 'Quicksand', sans-serif; */
 
-/** Nav Bar */
+/** Nav Bar and Header **/
 
 header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: baseline;
   text-align: center;
+  background-color: #ffc2e3;
 }
 
 .logo {
+  width: 100%;
   max-width: 35%;
 }
 
-.navbar {
+nav {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.5em;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 20px 10px;
+}
+/*.navbar {
   background-color: #ffc2e3;
   display: flex;
   justify-content: space-around;
   align-items: baseline;
   font-size: 28px;
   width: 100%;
-}
+}*/
 
-.nav-list {
+/*.nav-list {
   list-style-type: none;
 }
 
-.nav-list .list-item {
+/*.nav-list .list-item {
   display: inline-block;
   padding: 20px 10px;
 }
+*/
 
+.navbar {
+  display: none;
+}
 
+/* ******************************* HAMBURGER MENU STYLES ******************************* */
+
+.hamburger {
+  background: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  line-height: 45px;
+  padding: 5px 15px 0px 15px;
+  color: #999;
+  border: 0;
+  font-size: 1.4em;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  z-index: 10000000000000;
+}
+.cross {
+  background: none;
+  position: absolute;
+  top: 0px;
+  right: 0;
+  padding: 7px 15px 0px 15px;
+  color: #999;
+  border: 0;
+  font-size: 3em;
+  line-height: 65px;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  z-index: 10000000000000;
+}
+.menu {
+  z-index: 1000000;
+  font-weight: bold;
+  font-size: 0.8em;
+  width: 100%;
+  background: #f1f1f1;
+  position: absolute;
+  text-align: center;
+  font-size: 12px;
+}
+.menu ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  list-style-image: none;
+}
+.menu li {
+  display: block;
+  padding: 15px 0 15px 0;
+  border-bottom: #dddddd 1px solid;
+}
+.menu li:hover {
+  display: block;
+  background: #ffffff;
+  padding: 15px 0 15px 0;
+  border-bottom: #dddddd 1px solid;
+}
+.menu ul li a {
+  text-decoration: none;
+  margin: 0px;
+  color: #666;
+}
+.menu ul li a:hover {
+  color: #666;
+  text-decoration: none;
+}
+.menu a {
+  text-decoration: none;
+  color: #666;
+}
+.menu a:hover {
+  text-decoration: none;
+  color: #666;
+}
+
+/* ******************************* HAMBURGER MENU STYLES ******************************* */
 
 /** Home Page */
 body {
@@ -77,6 +178,8 @@ footer {
   text-align: center;
   padding: 3%;
   margin: auto;
+ 
+
 }
 
 footer p {
@@ -94,7 +197,6 @@ footer p {
   background-color: #ea0083;
 }
 
-
 .about {
   background-color: #ffffff;
   opacity: 0.9;
@@ -104,8 +206,8 @@ footer p {
   text-align: center;
 }
 
-.about h2{
-    padding-top: 2%;
+.about h2 {
+  padding-top: 2%;
 }
 
 /* Sticky sidebar 
@@ -117,38 +219,37 @@ footer p {
     transform: translate(0, 0); /* For browsers don't support translate3d. 
     transform: translate3d(0, 0, 0);
     will-change: position, transform;
-}
+}*/
+
+
 
 
 
 
 /********************* Memories Page Styling *********************/
-.memory_lane h2{
-    background-color: #ffc2e3;
-    margin: 3%;
-    padding: 5%;
-    border-radius: 10px;
+.memory_lane h2 {
+  background-color: #ffc2e3;
+  margin: 3%;
+  padding: 5%;
+  border-radius: 10px;
 }
 
 .about_elle {
-    background-color: white;
-    border: solid #53c9ed 5px;
-    margin: 5%;
-    padding: 10%;
+  background-color: white;
+  border: solid #53c9ed 5px;
+  margin: 5%;
+  padding: 10%;
 }
 
 .about_elle_img {
-    text-align: center;
-    padding: 5%;
+  text-align: center;
+  padding: 5%;
 }
 
-.about_elle_img img{
-    width: 100%;
-    max-width: 300px;
+.about_elle_img img {
+  width: 100%;
+  max-width: 300px;
 }
-
-
-
 
 /********************* RSVP Page Styling *********************/
 .reunion,
@@ -187,11 +288,11 @@ footer p {
 }
 
 .rsvp_section button:hover {
-    background: white;
-    border: solid white 2px;
-    border-radius: 10px;
-    margin: 5%;
-    padding: 2% 5%;
+  background: white;
+  border: solid white 2px;
+  border-radius: 10px;
+  margin: 5%;
+  padding: 2% 5%;
 }
 
 .fashion_tips ol {
@@ -202,57 +303,74 @@ footer p {
   padding: 3% 0;
 }
 
-
-
 /*  */
-
-
-
-
-
-
-
-
-
-
-
 
 /********************* Media Queries *********************/
 
 /* RSVP Page */
 @media (min-width: 600px) {
+  /* Header and Nav Media Query */
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
 
-    /* Header and Nav Media Query */
-    header {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-    }
+  .logo {
+    width: 35%;
+  }
 
-    .logo {
-        width: 35%;
-    }
+  nav {
+    padding: 2%;
+    font-size: 1.5em;
+    width: 60%;
+  }
 
-    nav {
-        padding: 2%;
-        font-size: 1.5em;
-        width: 60%;
-    }
+  .navbar ul li a:hover {
+    color: #000000;
+    text-decoration: none;
+    animation: bounce;
+    animation-duration: 1s;
+  }
+
+  main {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .rsvp_container {
+    width: 75%;
+  }
+
+  .fashion_tips {
+    margin: 0;
+    width: 30%;
+  }
+}
+
+/* ******************************* START MIN-WIDTH 850 MEDIA QUERY ******************************* */
+@media (min-width: 950px) {
+  .menu,
+  .hamburger,
+  .cross {
+    display: none;
+  }
+
+  .home_container{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .invite{
+    width: 95%;
+    
+  }
+
+  .about{
+    width: 30%;
+    padding: ;
+  }
 
 
-
-    main {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .rsvp_container {
-        width: 75%;
-    }
-
-    .fashion_tips {
-        margin: 0;
-        width: 30%;
-    }
 }

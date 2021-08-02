@@ -26,10 +26,17 @@
         <!-- <script src="//code.jquery.com/jquery.min.js"></script>
         <script src="dist/ResizeSensor.js"></script>
         <script src="dist/theia-sticky-sidebar.js"></script> -->
+
+        <!-- JQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		</head>
     </head>
 
     <body>
         <header>
+            <button class="hamburger">&#9776;</button>
+			<button class="cross">&#735;</button>
+
             <a href="#home"><img class="logo" src="images/logo.png" alt="logo" title="logo"/></a>
 
             <nav class="navbar">
@@ -39,6 +46,15 @@
                     <li class="list-item"><a href="rsvp.html">R.S.V.P.</a></li>
                 </ul>
             </nav>
+
+            <nav class="mobile-navbar">
+                <ul class="nav-list">
+                    <li class="list-item"><a href="home.html">Home</a></li>
+                    <li class="list-item"><a href="memories.html">Memories</a></li>
+                    <li class="list-item"><a href="rsvp.html">R.S.V.P.</a></li>
+                </ul>
+            </nav>
+
         </header>
 
         <main>
@@ -67,7 +83,9 @@
             <!-- Delta Nu logo here -->
         </footer>
 
-        <!-- <script src="js/main.js"></script> -->
+        <script src="js/main.js"></script> 
+        
+        <script src="js/hamburger.js" type="text/javascript"></script>
        
         
     </body>
