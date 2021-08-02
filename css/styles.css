@@ -95,6 +95,33 @@ footer p{
 
 
 
+/********************* Memories Page Styling *********************/
+.memory_lane h2{
+    background-color: #ffc2e3;
+    margin: 3%;
+    padding: 5%;
+    border-radius: 10px;
+}
+
+.about_elle {
+    background-color: white;
+    border: solid #53c9ed 5px;
+    margin: 5%;
+    padding: 10%;
+}
+
+.about_elle_img {
+    text-align: center;
+    padding: 5%;
+}
+
+.about_elle_img img{
+    width: 100%;
+    max-width: 300px;
+}
+
+
+
 
 /********************* RSVP Page Styling *********************/
 .reunion, .fashion_tips {
@@ -146,6 +173,20 @@ footer p{
 .fashion_tips li {
     padding: 3% 0;
 }
+
+
+
+/*  */
+
+
+
+
+
+
+
+
+
+
 
 
 /********************* Media Queries *********************/
