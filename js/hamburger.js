@@ -3,16 +3,16 @@
 $( document ).ready(function() {
 
 $( ".cross" ).hide();
-$( ".menu" ).hide();
+$( ".mobile-navbar" ).hide();
 $( ".hamburger" ).click(function() {
-$( ".menu" ).slideToggle( "slow", function() {
+$( ".mobile-navbar" ).slideToggle( "slow", function() {
 $( ".hamburger" ).hide();
 $( ".cross" ).show();
 });
 });
 
 $( ".cross" ).click(function() {
-$( ".menu" ).slideToggle( "slow", function() {
+$( ".mobile-navbar" ).slideToggle( "slow", function() {
 $( ".cross" ).hide();
 $( ".hamburger" ).show();
 });
