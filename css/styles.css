@@ -181,7 +181,7 @@ footer p {
   padding-top: 2%;
 }
 
-.invite:hover, 
+.invite:hover,
 .ellehomepage:hover,
 .about_elle_img:hover {
   -ms-transform: scale(1.1); /* IE 9 */
@@ -209,6 +209,7 @@ footer p {
 
 .about_elle {
   background-color: white;
+  opacity: 0.9;
   border: solid #53c9ed 5px;
   margin: 5%;
   padding: 5%;
@@ -245,6 +246,7 @@ footer p {
 .reunion,
 .fashion_tips {
   background-color: white;
+  opacity: 0.9;
   border: solid #53c9ed 5px;
   margin: 5%;
   padding: 3%;
@@ -342,20 +344,15 @@ footer p {
   .nav-list .list-item {
     display: inline-block;
     padding: 20px 10px;
-   
   }
 
-  .navbar .nav-list, .list-item a:hover {
+  .navbar .nav-list,
+  .list-item a:hover {
     color: #000000;
     text-decoration: none;
     animation: tada;
     animation-duration: 1s;
-  
   }
-
-  
-
- 
 
   /*nav {
     padding: 2%;
@@ -412,5 +409,3 @@ footer p {
     justify-content: space-around;
   }
 }
-
-
