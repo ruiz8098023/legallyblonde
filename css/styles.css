@@ -40,37 +40,6 @@ header {
   max-width: 35%;
 }
 
-nav {
-  font-family: "Quicksand", sans-serif;
-  font-size: 1.5em;
-}
-
-nav ul {
-  list-style-type: none;
-}
-
-nav ul li {
-  display: inline-block;
-  padding: 20px 10px;
-}
-/*.navbar {
-  background-color: #ffc2e3;
-  display: flex;
-  justify-content: space-around;
-  align-items: baseline;
-  font-size: 28px;
-  width: 100%;
-}*/
-
-/*.nav-list {
-  list-style-type: none;
-}
-
-/*.nav-list .list-item {
-  display: inline-block;
-  padding: 20px 10px;
-}
-*/
 
 nav {
   display: none;
@@ -315,25 +284,7 @@ footer p {
 
 /********************* Media Queries *********************/
 
-/* RSVP Page */
-@media (min-width: 600px) {
-  /* Header and Nav Media Query */
-  
 
-  main {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .rsvp_container {
-    width: 75%;
-  }
-
-  .fashion_tips {
-    margin: 0;
-    width: 30%;
-  }
-}
 
 /* ******************************* START MIN-WIDTH 950 MEDIA QUERY ******************************* */
 @media (min-width: 950px) {
@@ -353,9 +304,6 @@ footer p {
     
   }
 
-  .about{
-    width: 30%;
-  }
 
   header {
     display: flex;
@@ -368,20 +316,74 @@ footer p {
     width: 35%;
   }
 
+  .navbar {
+  background-color: #ffc2e3;
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  font-size: 28px;
+  width: 100%;
+}
+
+.nav-list {
+  list-style-type: none;
+}
+
+.nav-list .list-item {
+  display: inline-block;
+  padding: 20px 10px;
+}
+
+.navbar ul li a:hover {
+  color: #000000;
+  text-decoration: none;
+  animation: bounce;
+  animation-duration: 1s;
+
+}
 
 
-  nav {
+
+  /*nav {
     padding: 2%;
     font-size: 1.5em;
     width: 60%;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.5em;
+  }
+  
+  nav ul {
+    list-style-type: none;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    padding: 20px 10px;
   }
 
-  .navbar ul li a:hover {
-    color: #000000;
-    text-decoration: none;
-    animation: bounce;
-    animation-duration: 1s;
+
+
+  /* RSVP Page */
+
+  /* Header and Nav Media Query */
+  
+
+  main {
+    display: flex;
+    flex-direction: row;
   }
+
+  .rsvp_container {
+    width: 75%;
+  }
+
+  .fashion_tips, .about {
+    margin: 0;
+    width: 30%;
+  }
+
+
 
 
 }
+
