@@ -72,7 +72,7 @@ nav ul li {
 }
 */
 
-.navbar {
+nav {
   display: none;
 }
 
@@ -108,7 +108,7 @@ nav ul li {
   outline: none;
   z-index: 10000000000000;
 }
-.menu {
+.mobile-navbar{
   z-index: 1000000;
   font-weight: bold;
   font-size: 0.8em;
@@ -118,42 +118,43 @@ nav ul li {
   text-align: center;
   font-size: 12px;
 }
-.menu ul {
+.mobile-navbar ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
   list-style-image: none;
 }
-.menu li {
+.mobile-navbar li {
   display: block;
   padding: 15px 0 15px 0;
   border-bottom: #dddddd 1px solid;
 }
-.menu li:hover {
+.mobile-navbar li:hover {
   display: block;
   background: #ffffff;
   padding: 15px 0 15px 0;
   border-bottom: #dddddd 1px solid;
 }
-.menu ul li a {
+.mobile-navbar ul li a {
   text-decoration: none;
   margin: 0px;
   color: #666;
 }
-.menu ul li a:hover {
+.mobile-navbar ul li a:hover {
   color: #666;
   text-decoration: none;
 }
-.menu a {
+.mobile-navbar a {
   text-decoration: none;
   color: #666;
 }
-.menu a:hover {
+.mobile-navbar a:hover {
   text-decoration: none;
   color: #666;
 }
 
 /* ******************************* HAMBURGER MENU STYLES ******************************* */
+
 
 /** Home Page */
 body {
@@ -210,6 +211,13 @@ footer p {
   padding-top: 2%;
 }
 
+
+.invite:hover{
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1); 
+
+}
 /* Sticky sidebar 
 .sidebar{
     will-change: min-height;
@@ -310,29 +318,7 @@ footer p {
 /* RSVP Page */
 @media (min-width: 600px) {
   /* Header and Nav Media Query */
-  header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-  }
-
-  .logo {
-    width: 35%;
-  }
-
-  nav {
-    padding: 2%;
-    font-size: 1.5em;
-    width: 60%;
-  }
-
-  .navbar ul li a:hover {
-    color: #000000;
-    text-decoration: none;
-    animation: bounce;
-    animation-duration: 1s;
-  }
+  
 
   main {
     display: flex;
@@ -349,9 +335,9 @@ footer p {
   }
 }
 
-/* ******************************* START MIN-WIDTH 850 MEDIA QUERY ******************************* */
+/* ******************************* START MIN-WIDTH 950 MEDIA QUERY ******************************* */
 @media (min-width: 950px) {
-  .menu,
+  .mobile-navbar,
   .hamburger,
   .cross {
     display: none;
@@ -371,7 +357,31 @@ footer p {
     width: 30%;
   }
 
-  
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .logo {
+    width: 35%;
+  }
+
+
+
+  nav {
+    padding: 2%;
+    font-size: 1.5em;
+    width: 60%;
+  }
+
+  .navbar ul li a:hover {
+    color: #000000;
+    text-decoration: none;
+    animation: bounce;
+    animation-duration: 1s;
+  }
 
 
 }
