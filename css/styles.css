@@ -9,6 +9,8 @@ h2 {
   font-family: "Petit Formal Script", cursive;
   color: #ea0083;
   font-size: 2em;
+  animation: pulse;
+  animation-duration: 1s;
 }
 
 h3 {
@@ -179,7 +181,9 @@ footer p {
   padding-top: 2%;
 }
 
-.invite:hover {
+.invite:hover, 
+.ellehomepage:hover,
+.about_elle_img:hover {
   -ms-transform: scale(1.1); /* IE 9 */
   -webkit-transform: scale(1.1); /* Safari 3-8 */
   transform: scale(1.1);
@@ -410,12 +414,3 @@ footer p {
 }
 
 
-/*@keyframes tada {
-  from {
-    transform: translateX(0%);
-  }
-
-  to {
-    transform: translateX(100%);
-  }
-}
